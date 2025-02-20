@@ -32,8 +32,6 @@ static size_t replaceAndWrite(const char *pcLine,
       return 0;
    }
       
-   
-      
    while (*curr != '\0')
    {
       if (Str_search (curr, pcFrom) == curr)
