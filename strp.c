@@ -83,13 +83,13 @@ char *Str_search (const char *str1, const char *str2)
 
   if (*str2 == '\0')
   {
-    return str1;
+    return (char *)str1;
   }
 
   while (*str1 != '\0')
   {
-    char *pc1 = str1;
-    char *pc2 = str2;
+    const char *pc1 = str1;
+    const char *pc2 = str2;
     while (*pc2 != '\0' && *pc1 == *pc2)
     {
       pc1++;
@@ -98,7 +98,7 @@ char *Str_search (const char *str1, const char *str2)
     
     if (*pc2 == '\0')
     {
-      return pc1;
+      return (char *)pc1;
     }
     str1++;
   }
