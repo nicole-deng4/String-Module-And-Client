@@ -1,3 +1,5 @@
+/* This header file declares functions for basic string manipulation, including Str_getLength, Str_copy, Str_concat, Str_compare, and Str_search*/
+
 #ifndef STR_H
 #define STR_H
 
