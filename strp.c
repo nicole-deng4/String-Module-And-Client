@@ -3,8 +3,8 @@ This file implements the basic string manipulation functions including Str_getLe
 Str_search using pointer notation. 
 */
 
-# include "str.h"
-# include <assert.h>
+#include "str.h"
+#include <assert.h>
 
 /* As long as the str is not null, this function computes the length of a given string using pointer notation by initializing a pointer 
 to traverse the character sequence and returning the number of characters before it reaches the null terminator. */
