@@ -1,3 +1,8 @@
+/* String Module Implementation:
+    This function implements the basic string manipulation functions including Str_getLength, Str_copy, Str_concat, Str_compare, and Str_search.
+*/
+
+
 #include "str.h"
 #include <assert.h>
 
