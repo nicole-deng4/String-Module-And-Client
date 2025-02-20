@@ -25,7 +25,7 @@ char *Str_copy (const char str1[], const char str2[])
   return str1;
 }
 
-char *Str_cat (const char str1[], const char str2[])
+char *Str_concat (const char str1[], const char str2[])
 {
   size_t str1i = 0;
   assert (str1 != NULL && str2 != NULL);
