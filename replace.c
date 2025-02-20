@@ -21,10 +21,9 @@ static size_t replaceAndWrite(const char *pcLine,
                               const char *pcFrom, const char *pcTo)
 {
    const char *curr = pcLine;
-   assert (pcLine != NULL && pcFrom != NULL && pcTo != NULL);
-   
    size_t lengthOfStrToBeReplaced = Str_getLength (pcFrom);
    size_t numReplacements = 0;
+   assert (pcLine != NULL && pcFrom != NULL && pcTo != NULL);
 
    if (lengthOfStrToBeReplaced == 0)
    {
