@@ -10,8 +10,9 @@ Str_search using pointer notation.
 and returning the number of characters before it reaches the null terminator. */
 size_t Str_getLength (const char *str)
 {
-  const char *pc = str;
+  const char *pc;
   assert (str != NULL);
+  pc = str;
   while (*pc != '\0')
   {
     pc++;
@@ -24,8 +25,9 @@ a pointer through str2, copying each character into str1 until the null terminat
 str1. */
 char *Str_copy (char *str1, const char *str2)
 {
-  char *newStr1 = str1;
+  char *newStr1;
   assert (str1 != NULL && str2 != NULL);
+  newStr1 = str1;
   while (*str2 != '\0')
   {
     *str1 = *str2;
@@ -41,9 +43,9 @@ a pointer to the null terminator of str1, then copying characters from str2 into
 returns a pointer to the beginning of str1. */
 char *Str_concat (char *str1, const char *str2)
 {
-  char *newStr1 = str1;
-  
+  char *newStr1;
   assert (str1 != NULL && str2 != NULL);
+  newStr1 = str1;
   while (*str1 != '\0')
   {
     str1++;
@@ -64,7 +66,6 @@ characters of str1 and str2 until a difference is found or the null terminator i
 based on lexicographic order. */
 int Str_compare (const char *str1, const char *str2)
 {
-  
   assert (str1 != NULL && str2 != NULL);
   while (*str1 != '\0' && *str2 != '\0' && *str1 == *str2)
   {
@@ -79,7 +80,6 @@ substring match by comparing characters in str2 to corresponding characters of s
 in str1, or NULL if not found. */
 char *Str_search (const char *str1, const char *str2)
 {
-  
   assert(str1 != NULL && str2 != NULL);
 
   if (*str2 == '\0')
