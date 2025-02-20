@@ -12,7 +12,7 @@ size_t Str_getLength (const char *str)
 {
   const char *pc = str;
   assert (str != NULL);
-  while (*pc != '0')
+  while (*pc != '\0')
   {
     pc++;
   }
@@ -88,8 +88,8 @@ char *Str_search (const char *str1, const char *str2)
 
   while (*str1 != '\0')
   {
-    const char *pc1 = str1;
-    const char *pc2 = str2;
+    char *pc1 = str1;
+    char *pc2 = str2;
     while (*pc2 != '\0' && *pc1 == *pc2)
     {
       pc1++;
