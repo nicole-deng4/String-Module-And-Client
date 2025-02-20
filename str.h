@@ -5,10 +5,10 @@
 
 #include <stddef.h>
 
-/* As long as str isn't null, this function returns the length of the string pointed to by str */
+/* This function returns the length of the string pointed to by str, as long as str isn't null. */
 size_t Str_getLength (const char *str);
 
-/* As long as str isn't null, this function copies the string pointed to by str2 into the array pointed by str1 */
+/* This function copies the string pointed to by str2 into the array pointed by str1, as long as str isn't null. */
 char *Str_copy (char *str1, const char *str2);
 
 /* As long as str1 and str2 aren't null and str1 holds enough space to accommodate the additional characters from str2, this function appends the string pointed to by str2 to the end of the string pointed to by str1 and returns the pointer to str1. */ 
