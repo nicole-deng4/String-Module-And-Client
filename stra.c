@@ -72,6 +72,7 @@ char *Str_search (const char str1 [], const char str2 [])
 {
   size_t str1i = 0;
   size_t str2i;
+  assert(str1 != NULL && str2 != NULL);
 
   if (*str2 == '\0')
   {
