@@ -28,7 +28,8 @@ char *Str_copy (char str1[], const char str2[])
 char *Str_concat (char str1[], const char str2[])
 {
   size_t str1i = 0;
-  size_t str2i = 0
+  size_t str2i = 0;
+  
   assert (str1 != NULL && str2 != NULL);
   while (str1[str1i] != '\0')
   {
