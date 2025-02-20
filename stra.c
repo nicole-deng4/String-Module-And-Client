@@ -1,6 +1,7 @@
 #include "str.h"
 #include <assert.h>
 
+# As long as the string is not null, this function computes the length of a given string by returning the number of characters in the string before the null terminator. 
 size_t Str_getLength (const char str[]) 
 {
   size_t length = 0;
@@ -12,6 +13,7 @@ size_t Str_getLength (const char str[])
   return length;
 }
 
+# As long as str1 has enough space to hold str2 and str1 and str2 are not null, this function copies the contents of str2 into str1 and returns a pointer to the updated str1. 
 char *Str_copy (char str1[], const char str2[])
 {
   size_t str2i = 0;
@@ -25,6 +27,7 @@ char *Str_copy (char str1[], const char str2[])
   return str1;
 }
 
+# As long as str1 has enough space to have str2 appended to its contents and str1 and str2 are not null, this function appends str2 to the end of str1 and returns a pointer to the updated str1.
 char *Str_concat (char str1[], const char str2[])
 {
   size_t str1i = 0;
@@ -46,6 +49,7 @@ char *Str_concat (char str1[], const char str2[])
   return str1;
 }
 
+# This function compares two strings lexicographically, str1 and str2, by returning an integer less than, equal to, or greater than zero if str1 is found to be lexographically less than, equal to, or greater than str2.
 int Str_compare (const char str1 [], const char str2 [])
 {
   size_t i = 0;
@@ -58,6 +62,7 @@ int Str_compare (const char str1 [], const char str2 [])
   return ((int)(str1[i]) - (int)(str2[i]));
 }
 
+# This function searches for the first occurrence of str2 in str1 by returning a char pointer to the first occurrence of str2 in str1 or NULL if str2 is not found.
 char *Str_search (const char str1 [], const char str2 [])
 {
   size_t str1i = 0;
