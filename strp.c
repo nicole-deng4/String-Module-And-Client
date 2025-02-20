@@ -6,8 +6,8 @@ Str_search using pointer notation.
 # include "str.h"
 # include <assert.h>
 
-/* This function computes the length of a given string using pointer notation by initializing a pointer to traverse the character sequence 
-and returning the number of characters before it reaches the null terminator. */
+/* As long as the str is not null, this function computes the length of a given string using pointer notation by initializing a pointer 
+to traverse the character sequence and returning the number of characters before it reaches the null terminator. */
 size_t Str_getLength (const char *str)
 {
   const char *pc;
