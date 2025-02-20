@@ -10,8 +10,8 @@ Str_search using pointer notation.
 to traverse the character sequence and returning the number of characters before it reaches the null terminator. */
 size_t Str_getLength (const char *str)
 {
-  const char *pc;
   assert (str != NULL);
+  const char *pc;
   pc = str;
   while (*pc != '\0')
   {
@@ -25,8 +25,8 @@ a pointer through str2, copying each character into str1 until the null terminat
 str1. */
 char *Str_copy (char *str1, const char *str2)
 {
-  char *newStr1;
   assert (str1 != NULL && str2 != NULL);
+  char *newStr1;
   newStr1 = str1;
   while (*str2 != '\0')
   {
@@ -43,8 +43,8 @@ a pointer to the null terminator of str1, then copying characters from str2 into
 returns a pointer to the beginning of str1. */
 char *Str_concat (char *str1, const char *str2)
 {
-  char *newStr1;
   assert (str1 != NULL && str2 != NULL);
+  char *newStr1;
   newStr1 = str1;
   while (*str1 != '\0')
   {
