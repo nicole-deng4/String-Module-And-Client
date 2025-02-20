@@ -7,10 +7,10 @@
 size_t Str_getLength (const char *str);
 
 /* As long as str isn't null, this function copies the string pointed to by str2 into the array pointed by str1 */
-char *Str_copy (const char *str1, const char *str2);
+char *Str_copy (char *str1, const char *str2);
 
 /* As long as str1 and str2 aren't null and str1 holds enough space to accommodate the additional characters from str2, this function appends the string pointed to by str2 to the end of the string pointed to by str1 and returns the pointer to str1. */ 
-char *Str_concat (const char *str1, const char *str2);
+char *Str_concat (char *str1, const char *str2);
 
 /* As long as str1 and str2 aren't null, this function compares str1 and str2, returning a positive integer if str1 > str2, zero if str1 = str2, and a negative integer if str1 < str2. */
 int Str_compare (const char *str1, const char *str2);
