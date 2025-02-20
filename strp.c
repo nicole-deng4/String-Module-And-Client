@@ -32,6 +32,7 @@ char *Str_copy (char *str1, const char *str2)
     str1++;
     str2++;
   }
+  *str1 = '\0';
   return newStr1;
 }
 
@@ -54,7 +55,7 @@ char *Str_concat (char *str1, const char *str2)
     str1++;
     str2++;
   }
-  
+  *str1 = '\0';
   return newStr1;
 }
 
@@ -98,7 +99,7 @@ char *Str_search (const char *str1, const char *str2)
     
     if (*pc2 == '\0')
     {
-      return (char *)pc1;
+      return (char *)str1;
     }
     str1++;
   }
