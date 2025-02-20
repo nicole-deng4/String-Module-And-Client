@@ -71,7 +71,7 @@ int Str_compare (const char *str1, const char *str2)
     str1++;
     str2++;
   }
-  return (int)((*str1) - (*str2)); /* Unsigned char? */
+  return (int)((unsigned char)(*str1) - (unsigned char)(*str2)); /* Unsigned char? */
 }
 
 /* This function searches for the first occurrence of str2 in str1 by using pointer notation to iterate through str1, checking for a 
