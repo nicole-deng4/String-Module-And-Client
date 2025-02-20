@@ -60,11 +60,16 @@ int Str_compare (const char str1 [], const char str2 [])
 char *Str_search (const char str1 [], const char str2 [])
 {
   size_t str1i = 0;
-  size_t str2i = 0;
+  size_t str2i;
+
+  if (*str2 == '\0')
+  {
+    return (char *) str1;
+  }
 
   while (str1[str1i] != '\0')
   {
-    str1i++;
+    str2i = 0;
     while (str2[str2i] != '\0' && str1[str1i+str2i] == str2[str2i])
     {
       str2i++;
@@ -74,6 +79,7 @@ char *Str_search (const char str1 [], const char str2 [])
     {
       return (char *)(&str1[str1i]);
     }
+    str1i++;
   }
   return NULL;
 }
