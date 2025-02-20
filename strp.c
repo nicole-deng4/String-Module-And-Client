@@ -12,7 +12,7 @@ size_t Str_getLength (const char *str)
 {
   const char *pc = str;
   assert (str != NULL);
-  while (*pc != \'0')
+  while (*pc != '0')
   {
     pc++;
   }
