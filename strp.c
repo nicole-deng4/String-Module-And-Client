@@ -69,8 +69,8 @@ char *Str_search (const char *str1, const char *str2)
 
   while (*str1 != '\0')
   {
-    const char *pc1 = str1
-    const char *pc2 = str2
+    const char *pc1 = str1;
+    const char *pc2 = str2;
     while (*pc2 != '\0' && *pc1 == *pc2)
     {
       pc1++;
