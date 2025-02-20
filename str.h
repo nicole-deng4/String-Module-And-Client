@@ -16,6 +16,6 @@ char *Str_concat (const char *str1, const char *str2);
 int Str_compare (const char *str1, const char *str2);
 
 /* As long as str1 and str2 aren't null, this function returns a pointer to the first occurrence of str2 in str1 or returns null if str2 was not found in str1. */
-char Str_search (const char *str1, const char *str2);
+char *Str_search (const char *str1, const char *str2);
 
 #endif
