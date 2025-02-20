@@ -4,7 +4,7 @@
 #include <stddef.h>
 
 /* As long as str isn't null, this function returns the length of the string pointed to by str */
-size_t Str_getLength (const char str*);
+size_t Str_getLength (const char *str);
 
 /* As long as str isn't null, this function copies the string pointed to by str2 into the array pointed by str1 */
 char *Str_copy (const char *str1, const char *str2);
