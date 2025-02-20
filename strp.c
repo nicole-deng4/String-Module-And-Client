@@ -1,5 +1,5 @@
 /* String Module Pointer Notation Implementation:
-This function implements the basic string manipulation functions including Str_getLength, Str_copy, Str_concat, Str_compare, and 
+This file implements the basic string manipulation functions including Str_getLength, Str_copy, Str_concat, Str_compare, and 
 Str_search using pointer notation. 
 */
 
