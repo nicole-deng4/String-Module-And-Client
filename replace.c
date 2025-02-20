@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------*/
 /* replace.c                                                          */
-/* Author: ???                                                        */
+/* Author: Nicole Deng                                                        */
 /*--------------------------------------------------------------------*/
 
 #include "str.h"
@@ -20,7 +20,36 @@
 static size_t replaceAndWrite(const char *pcLine,
                               const char *pcFrom, const char *pcTo)
 {
-   /* Insert your code here. */
+   assert (pcLine != NULL && pcFrom != NULL && pcTo != NULL);
+   
+   size_t lengthOfStrToBeReplaced = Str_length (pcFrom);
+   size_t lengthOfReplacementStr = Str_length (pcTo);
+   size_t lengthOfOriginalLine = Str_length (pcLine);
+   size_t numReplacements = 0;
+
+   if (lengthOfStrToBeReplaced == 0)
+   {
+      printf ("%s", pcLine);
+      return 0;
+   }
+      
+   const char *curr = pcLine;
+      
+   while (*curr != '\0')
+   {
+      if (Str_search (curr, pcFrom) == curr)
+      {
+         printf("%s", pcTo);
+         numReplacements++;
+         curr+= lengthOfStrToBeReplaced;
+      }
+      else
+      {
+         putchar(*curr);
+         curr++;
+      }
+   }
+   return numReplacements;
 }
 
 /*--------------------------------------------------------------------*/
