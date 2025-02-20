@@ -12,7 +12,7 @@ size_t Str_getLength (const char str[])
   return length;
 }
 
-char *Str_copy (const char str1[], const char str2[])
+char *Str_copy (char str1[], const char str2[])
 {
   size_t str2i = 0;
   assert (str1 != NULL && str2 != NULL);
@@ -25,7 +25,7 @@ char *Str_copy (const char str1[], const char str2[])
   return str1;
 }
 
-char *Str_concat (const char str1[], const char str2[])
+char *Str_concat (char str1[], const char str2[])
 {
   size_t str1i = 0;
   assert (str1 != NULL && str2 != NULL);
