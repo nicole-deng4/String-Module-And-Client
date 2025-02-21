@@ -11,7 +11,8 @@ to traverse the character sequence and returning the number of characters before
 size_t Str_getLength (const char *str)
 {
   assert (str != NULL);
-  const char *pc = str;
+  const char *pc;
+  pc = str;
   while (*pc != '\0')
   {
     pc++;
@@ -25,7 +26,8 @@ str1. */
 char *Str_copy (char *str1, const char *str2)
 {
   assert (str1 != NULL && str2 != NULL);
-  char *newStr1 = str1;
+  char *newStr1;
+  newStr1 = str1;
   while (*str2 != '\0')
   {
     *str1 = *str2;
@@ -42,7 +44,8 @@ returns a pointer to the beginning of str1. */
 char *Str_concat (char *str1, const char *str2)
 {
   assert (str1 != NULL && str2 != NULL);
-  char *newStr1 = str1;
+  char *newStr1;
+  newStr1 = str1;
   while (*str1 != '\0')
   {
     str1++;
