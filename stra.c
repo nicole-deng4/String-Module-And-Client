@@ -3,7 +3,6 @@ This file implements the basic string manipulation functions including Str_getLe
 Str_search using array notation. 
 */
 
-
 #include "str.h"
 #include <assert.h>
 
