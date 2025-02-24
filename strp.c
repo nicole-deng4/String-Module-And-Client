@@ -61,9 +61,9 @@ char *Str_concat (char *str1, const char *str2)
   return newStr1;
 }
 
-/* This function compares two strings lexicographically using pointer notation by traversing two character pointers, comparing corresponding 
-characters of str1 and str2 until a difference is found or the null terminator is reached. It returns a negative, zero, or positive integer 
-based on lexicographic order. */
+/* This function compares str1 and str2 lexicographically using pointer notation by traversing two character pointers, comparing 
+corresponding characters of str1 and str2 until a difference is found or the null terminator is reached. It returns a negative, zero, or 
+positive integer based on lexicographic order. */
 int Str_compare (const char *str1, const char *str2)
 {
   assert (str1 != NULL && str2 != NULL);
