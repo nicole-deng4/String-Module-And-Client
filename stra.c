@@ -6,7 +6,7 @@ Str_search using array notation.
 #include "str.h"
 #include <assert.h>
 
-/* As long as the string is not null, this function computes the length of a given string by using an index to iterate through the character 
+/* As long as str is not null, this function computes the length of a given string by using an index to iterate through the character 
 array and returning the number of characters in the string before the null terminator. */
 size_t Str_getLength (const char str[]) 
 {
@@ -57,9 +57,9 @@ char *Str_concat (char str1[], const char str2[])
   return str1;
 }
 
-/* This function compares two strings lexicographically, str1 and str2, by iterating through the character arrays using an index, comparing 
-corresponding elements until a difference is found or the null terminator is reached. It returns an integer less than, equal to, or greater 
-than zero if str1 is found to be lexographically less than, equal to, or greater than str2. */
+/* This function compares str1 and str2 lexicographically, str1 and str2, by iterating through the character arrays using an index, 
+comparing corresponding elements until a difference is found or the null terminator is reached. It returns an integer less than, equal to, 
+or greater than zero if str1 is found to be lexographically less than, equal to, or greater than str2. */
 int Str_compare (const char str1 [], const char str2 [])
 {
   size_t i = 0;
